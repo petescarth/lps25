@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Poster Summaries</title>
+    <script>
+        // Add a click handler to make images open in a new tab
+        document.addEventListener('DOMContentLoaded', function() {
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(img => {
+                img.title = "Click to view full size image in a new tab";
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        .poster-entry {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .thumbnail {
+            max-width: 300px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .authors {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        p {
+            white-space: pre-wrap; /* Preserves line breaks from the API response */
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conference Poster Summaries</h1>
+    <div class="poster-entry">
+        <h2>Integrating Multisource LiDAR Data for Aboveground Biomass Estimation</h2>
+        <div class="authors">Qian Song1, Simon Besnard1, Mikhail Urbazaev1, Benjamin Brede1, Martin Herold1, Mike Sips1
+1 GFZ Helmholtz Centre for Geosciences</div>
+        <a href="image/PXL_20250623_152947771~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250623_152947771~2.jpg" alt="Poster image: Integrating Multisource LiDAR Data for Aboveground Biomass Estimation">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Developing a foundation model for carbon stock estimation that can be generalized and applied to map below and above ground carbon stocks.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Integration of spaceborne (GEDI, ICESat-2) and airborne (ALS) LiDAR data.  Data processing included noise removal, creation of canopy height models (CHMs), and biomass calculations using allometric equations. </p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Developed CHMs from both spaceborne and airborne LiDAR data.  Allometric equations, initially developed for 50m resolution data, were found applicable to 15m data as well.  Presented scatterplots showing correlations between ALS and GEDI derived canopy heights.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The study contributes ALS data to the 3D-ABC foundational model for biomass estimation.  The allometric equations are shown to be suitable for lower resolution data.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Utilizing a global reference open dataset AGBref to assess all global biomass maps produced from 2010 to 2025</h2>
+        <div class="authors">Arnan Araza¹, Martin Herold¹, Mikhail Urbazaev², Lars Hein¹, et al.</div>
+        <a href="image/PXL_20250623_153045004~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250623_153045004~2.jpg" alt="Poster image: Utilizing a global reference open dataset AGBref to assess all global biomass maps produced from 2010 to 2025">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>1. Assess how global biomass maps improve over time (2010-2015, 2016-2020, 2021-2025). 2. Compare validation results for a biomass product (CCI Biomass) with yearly versions.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Compilation of maps and access of AGBref; Map reprojection, merging of tiles; Matching AGBref to map production periods; Harmonization of forest definition/mask; Resampling of maps into 0.1 deg. using mean of all pixels; Use of 0.1 deg. dataset and &#x27;min. plots&#x27; filter of AGBref; Map assessment using MD, RMSD over biomass bins; Inter-comparison of maps and analysis over map production periods.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Maps tend to have systematic differences (uniform bias or over-/under-estimation in lower and upper biomass bins). These biases decrease in recently produced maps; bias can be regional.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>GEDI Structure Metrics as Predictors for Agroforestry Biomass: A Deep Learning Fusion Approach with Sentinel and ALOS</h2>
+        <div class="authors">Xi Zhu, Mila Luleva, Yaqing Gou, Acorn, Rabobank (The Netherlands)</div>
+        <a href="image/PXL_20250624_135041558.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_135041558.MP~2.jpg" alt="Poster image: GEDI Structure Metrics as Predictors for Agroforestry Biomass: A Deep Learning Fusion Approach with Sentinel and ALOS">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Can a deep learning fusion approach using GEDI, Sentinel-1, Sentinel-2, and ALOS data improve the accuracy of agroforestry biomass estimation by including foliage height diversity (FHD)?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>A multitask convolutional neural network (UNet) was developed to predict GEDI-derived structural traits (RH95, CC, FHD) from co-registered raster stacks of Sentinel-1, Sentinel-2, and ALOS data. Model performance was evaluated using R², RMSE, and spatial validation. Late fusion was employed.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Including FHD improved biomass prediction accuracy, increasing R² from 0.69 to 0.74.  Airborne LiDAR validation showed strong correlation between modeled and measured GEDI metrics.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The study presents a scalable framework for estimating GEDI structural traits using freely available satellite data. Combining spaceborne lidar with multi-source EO data improves biomass mapping, particularly in regions with sparse in-situ data.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>The Timeline Viewer: a web application for intuitive interactive visualisation of time-based data</h2>
+        <div class="authors">Eelco Doornbos, Mark Ter Linden, Eelco Verduijn, Kasper van Dam, Jos de Kloe, Gerd-Jan Van Zadelhoff, Royal Netherlands Meteorological Institute (KNMI), De Bilt, The Netherlands</div>
+        <a href="image/PXL_20250624_135225098.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_135225098.MP~2.jpg" alt="Poster image: The Timeline Viewer: a web application for intuitive interactive visualisation of time-based data">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To develop an interactive web application for intuitive visualization and exploration of time-dependent space weather data from multiple sources, allowing simultaneous display and comparison across different data types and time scales.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Developed an interactive web application using an easy-to-use interface for zooming and panning.  The front-end is written in Svelte, the back-end in Python and deployed on the AWS cloud. Data sources include NOAA SWPC, NASA CCMC, and ESA Swarm data.  Utilized HAPI servers for data access.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The application provides interactive visualizations of space weather data, demonstrating its usefulness for real-time monitoring, data quality monitoring (EarthCARE mission), and educational purposes.  It successfully handles various data types and allows comparison across multiple datasets.  Improved data quality in EarthCARE through noise spike identification and Li processing software adaptation.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The Timeline Viewer is a flexible and user-friendly tool for visualizing and analyzing time-based data, applicable across various domains such as space weather and Earth observation missions.  Its open-source nature promotes wider adoption and further development.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Towards cloud-based EO platform in support of indicator development for society and environment</h2>
+        <div class="authors">Alexandra Bojor, Maximilian Houel, Tyna Doležalová, Lubomír Doležal, Fabien Castel, Camille Lainé, Stefano Natali (SISTEMA GmbH, Vienna, Austria), Daniel Santillan (EOX IT Services GmbH, Vienna, Austria), Adrien Gavazzi (Murmuration SAS, Toulouse, France)</div>
+        <a href="image/PXL_20250624_135241974~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_135241974~2.jpg" alt="Poster image: Towards cloud-based EO platform in support of indicator development for society and environment">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To explore the value of cross-cutting technologies (Overpass API, Citizen Contributed Data, Gamification) and develop innovative, interdisciplinary indicators from EO and geospatial data to address pressing societal challenges.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Utilizes Earth Observation data, Overpass API, Citizen Contributed Data, Gamification (Minesweeper), Machine/Deep Learning, and Artificial Intelligence approaches.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Developed indicators for pollution and urban heat islands, wildlife and biodiversity, food security, flood risk, and real estate.  These indicators leverage satellite imagery, population data, citizen-contributed information, and gamification techniques.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Graph-Based Machine Learning Models and Earth Observation Data for Social Good</h2>
+        <div class="authors">Seán Ó Héir, Beate Desmitniece, Gary Watmough, Sohan Seth; School of Informatics, School of GeoSciences, University of Edinburgh</div>
+        <a href="image/PXL_20250624_140319334.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_140319334.MP~2.jpg" alt="Poster image: Graph-Based Machine Learning Models and Earth Observation Data for Social Good">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To predict population density in Mozambique using Graph Neural Networks (GNNs), specifically Relational Graph Convolutional Networks (R-GCNs).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Used GeoFlo to download Earth Observation (EO) data. Represented geographic areas as nodes and connections as edges in a graph.  Trained an R-GCN model using both labeled and unlabeled nodes, employing message passing and aggregating information to generate node and edge embeddings. Compared R-GCN performance to RF and BART models.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The R-GCN model outperformed RF and BART models in terms of MedAE (Mean Absolute Error), achieving a MedAE of 9.306 compared to 9.582 for BART and 11.419 for R-GCN.  R-squared values were comparable, with R-GCN showing 0.693, BART 0.744, and RF 0.714.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>R-GCNs offer greater flexibility for this task due to their ability to handle multiple relationships and scales, incorporate more input features, and adapt to semi-supervised or unsupervised learning.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Earth Observation-Based Characterization of Social-Ecological Systems in the Kavango-Zambezi Transfrontier Conservation</h2>
+        <div class="authors">Achim Röder¹, Jari Mahler¹, Henrike Dierkes¹, Aaron Nikultsev¹, Chidinma Akah¹, David Frantz², Richard Fynn³, Stéphanie Domptail⁴, Jonathan Kamwi⁵, Nicola Knox⁵, Vincent Nyirenda⁶ &amp; Antonio Chipita⁷</div>
+        <a href="image/PXL_20250624_140544251~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_140544251~2.jpg" alt="Poster image: Earth Observation-Based Characterization of Social-Ecological Systems in the Kavango-Zambezi Transfrontier Conservation">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To characterize the social-ecological systems in the Kavango-Zambezi Transfrontier Conservation Area (KAZA-TFCA) and understand the human-wildlife conflict and its impact on conservation and development objectives.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Used Landsat and Sentinel-2 data; implemented the Framework for Operational Radiometric Correction (FORCE) for automated radiometric correction; created a datacupe; utilized random forest models for land cover classification and analysis of agricultural dynamics; employed support vector regression for characterizing transformation frontiers.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Developed wall-to-wall vegetation maps for the Okavango Basin; characterized agricultural conversion and fallow dynamics; identified patterns of transformation frontiers in SE-Zambia.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Conservation, development, and food security can be synergetic goals if managed under an agroecological paradigm.  The current conservation paradigm stigmatises local communities and jeopardizes both livelihoods and conservation outcomes.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Cautionary Remarks: Time Series Decomposition on Ecosystem Resilience Estimation</h2>
+        <div class="authors">Xiaona Wang, Chaonan Ji*, Khalil Teber, Karin Mora, Miguel D. Mahecha*</div>
+        <a href="image/PXL_20250624_155159030.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_155159030.MP~2.jpg" alt="Poster image: Cautionary Remarks: Time Series Decomposition on Ecosystem Resilience Estimation">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>What is a suitable method to quantify ecosystem resilience? Which regions are prone to resilience misestimation when unsuitable ones are applied?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Synthetic data experiment using four methods: Trad (traditional method), STL (Seasonal Decomposition of Time Series by Loess), SSA (Singular Spectrum Analysis), and Theo (idealized data). Remote sensing data experiment using MCD43C4 kNDVI (2000-2023) dataset with specific filtering criteria.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>SSA outperforms Trad and STL in estimating ecosystem resilience. SSA captures lower resilience in warm, dry, and low tree cover regions, while STL overestimates. Trad shows spatially homogeneous overestimation, while STL shows spatially heterogeneous underestimation in specific regions (Eastern Amazon Basin, southern Africa, northern Australia).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Data preprocessing is crucial for accurate resilience estimation.  The choice of decomposition method significantly impacts results, with SSA showing superior performance.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Remote Sensing of Mental Health: The Effects of Heat Stress on Mental Health in Switzerland</h2>
+        <div class="authors">Ella Schubiger¹, Jennifer Susan Adams¹, Maria J. Santos¹, Susanne Fischer², Kathrin Naegeli¹
+¹ Department of Geography, University of Zurich
+² School of Medicine, University of St. Gallen</div>
+        <a href="image/PXL_20250624_155440629.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_155440629.MP~2.jpg" alt="Poster image: Remote Sensing of Mental Health: The Effects of Heat Stress on Mental Health in Switzerland">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>1. What is the spatiotemporal relationship between extreme heat events and mental health in Switzerland in 2017 and 2022?
+2. How do additional climate variables, land surface structures, and sociodemographic factors influence heat-related mental health outcomes?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>MODIS Aqua LST Quality Control; Computing average LST value per day in a 4-6 week window for every participant; Assigning each participant to larger biogeographic urban-rural regions; Analysis of outlier behavior of mental health indices in summer months per region in 2022 and 2017; Statistical exploration and modeling.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Hierarchical cumulative ordinal regression analysis showed a clear decrease in the probability of low stress with increasing amount of hot days and increasing probability of moderate to high stress with increasing amount of hot days. Urban regions had a higher probability of moderate to high stress levels compared to rural areas. Region R6 had a higher probability of moderate to high stress in summer compared to region R2.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Pronounced relationship between heat events, high LST, and worse mental health in summer 2022. Effects in 2017 show same trends but are less pronounced. Regional variations exist, but urban areas show a stronger response to heat events than rural areas.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>A Comprehensive Indicator to Quantify Anthropogenic Impacts on Biodiversity</h2>
+        <div class="authors">Théau DEGROOTE, Adrien GAVAZZI, Fabien CASTEL</div>
+        <a href="image/PXL_20250624_160510174.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_160510174.MP~2.jpg" alt="Poster image: A Comprehensive Indicator to Quantify Anthropogenic Impacts on Biodiversity">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To develop a scalable, reliable, and science-based approach to assessing biodiversity integrity by quantifying and mitigating the impact of human activities on biodiversity loss.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Uses the Mean Species Abundance (MSA) index, calculated separately for six key pressure factors (land use, climate change, habitat fragmentation, infrastructure disturbance, human encroachment, nitrogen deposition). Data is derived from a wide range of empirical data across multiple taxonomic groups and sourced from EEA, CORINE, ESA WorldCover, ECMWF, ERA5, IUCN, WDPA, and EMEP MSC-W.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>BioBalance highlights the uneven impact of different human pressures on biodiversity. Land use change consistently emerges as the dominant driver of biodiversity loss. The indicator has been applied in regional natural parks and urban contexts across multiple cities.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>BioBalance helps identify key levers for conservation and supports more informed decision-making for biodiversity protection.  Limitations include data availability and update frequency, simplifying assumptions, and the treatment of independent pressures.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>From GEE to CODE-DE: Transforming Deforestation Monitoring for EUDR Compliance and Global Forest Protection</h2>
+        <div class="authors">Fatemé Ghafarian, Melvin Lippe, Margret Köthke
+Thünen Institute of Forestry
+Johann Heinrich von Thünen Institute, Federal Research Institute for Rural Areas, Forests and Fisheries (TI-WF)</div>
+        <a href="image/PXL_20250624_161752339~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_161752339~2.jpg" alt="Poster image: From GEE to CODE-DE: Transforming Deforestation Monitoring for EUDR Compliance and Global Forest Protection">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Operationalize risk-based monitoring of deforestation for EUDR enforcement in Germany.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Developed CODED algorithm (originally in GEE) to monitor forest conversion and degradation using time series analysis of satellite data. Migrated processing from GEE to CODE-DE. Established secure infrastructure, deployed virtual machine on CODE-DE, and implemented and tested the pipeline within the CODE-DE platform.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>CODED implemented in CODE-DE cloud platform for German Authorities.  CODE-DE offers a robust, secure, and scalable environment for implementing EUDR in Germany.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Commodity Mapping and Change Detection Services in the Control System for EU Regulation 2023/1115 (EUDR)</h2>
+        <div class="authors">Laura De Vendictiis, Simone Tilia, Marco Corsia, Fabio Volpe, Giancarlo Papitto, Pasquali Pistillo
+e-GEOS S.p.A., ARMA DEI CARABINIERI, STARION</div>
+        <a href="image/PXL_20250624_161809552.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_161809552.MP~2.jpg" alt="Poster image: Commodity Mapping and Change Detection Services in the Control System for EU Regulation 2023/1115 (EUDR)">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To develop advanced systems capable of integrating multi-source Earth Observation (EO) data for land-use analysis and supply chain compliance to prevent deforestation-linked commodities from entering the EU market.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Commodity Mapping using a Vision Transformer (ViT) classifier applied to Sentinel-2 time series; Forest Monitoring via bi-temporal change detection combining Sentinel-1 SAR and Sentinel-2 optical data.  Includes unsupervised change detection with spatial context awareness using SIROC Methodology.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Bi-temporal change detection revealed clear deforestation between 2022 and 2024.  Agro-commodity mapping accurately detected key crops (e.g., coffee) with minimal confusion with other crops or natural vegetation.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>VERIFAID SUPPLY CHAIN: Advancing Commercial EO Solutions for EUDR Compliance: AI-Driven Insights for Deforestation and Degradation Monitoring</h2>
+        <div class="authors">Not specified in poster</div>
+        <a href="image/PXL_20250624_161840777~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_161840777~2.jpg" alt="Poster image: VERIFAID SUPPLY CHAIN: Advancing Commercial EO Solutions for EUDR Compliance: AI-Driven Insights for Deforestation and Degradation Monitoring">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>How to effectively monitor and verify EUDR compliance using AI-driven insights from satellite data?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Deep learning model (U-Net and Attention U-Net) for deforestation and degradation detection using over 9,500 S-2 image pairs annotated by experts.  Forest-type specific models (tropical and temperate/boreal forests) were used.  Data validated against UAV and reference data collected in the tropics.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Reliable detection of small-scale deforestation and forest degradation activities with 92% accuracy on an independent test dataset. Cloud-based monitoring provides actionable and timely data.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>VerifAld Supply Chain allows effective EUDR compliance checks, reporting and documentation through data-driven information and a transparent reporting system.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>How to support smallholders in proving EUDR compliance? A feasibility study</h2>
+        <div class="authors">Dr. Florian Schlenz, Johannes Sommer, Jenny Franco, Michael Holzapfel, Rita Lunghamer, Stefan Scherer, Geocledian GmbH, Landshut, Germany</div>
+        <a href="image/PXL_20250624_162033210~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_162033210~2.jpg" alt="Poster image: How to support smallholders in proving EUDR compliance? A feasibility study">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>How can smallholders prove EUDR compliance economically and efficiently?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Development and testing of an app-based approach to record production areas and confirm EUDR conformity using geolocation and a traceability solution.  The app integrates with Geocledian&#x27;s EO-centered EUDR Compliance Check API.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The app allows smallholders to easily capture geolocation, automatically check deforestation compliance, and receive a certificate.  Buyers receive mandatory geolocation and compliance data with no extra effort. The solution is free for smallholders; costs are borne by certificate and traceability users.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The integrated solution enables cocoa and coffee buyers to fulfill due diligence obligations efficiently.  It guarantees EU market access for producers meeting EUDR requirements, contributing to greater sustainability without negatively affecting smallholders. User testing is ongoing in South America and Africa.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>An approach for an EUDR Forest Baseline based on a combination of open data, commodity maps, and forest change detection</h2>
+        <div class="authors">M.L. Wolters, N. Anders, L. Foresta, V. Schut, R. Masselink, N. Wielaard, Satelligence</div>
+        <a href="image/PXL_20250624_162844348~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250624_162844348~2.jpg" alt="Poster image: An approach for an EUDR Forest Baseline based on a combination of open data, commodity maps, and forest change detection">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To convert Tree Cover Loss into Deforestation, we need to know where forest is, i.e., we need a Forest Baseline.  The research aims to develop a Forest Baseline Product (FBL) that differentiates natural forest removal from commodity-driven land use.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>The methodology involves aligning input data legends to create land cover classes; performing a multi-year consistency check to remove false positives and infer deforestation, degradation, and commodity planting dates; adding existing deforestation and forest degradation datasets; overlaying commodities over forests; forward and backpropagating commodities and other land cover over time; and applying canopy cover, canopy height, and spatial filtering to align with EUDR/NDPE.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>A best-in-class FBL product was developed. Accuracy assessment using stratified random sampling showed high Overall Accuracy (OA) in Ivory Coast (FBL OA 93.3% vs JRC EUDR V2 OA 77.1%), Brazil (87.5% vs 79.0%), and Indonesia (86.0% vs 80.1%). Independent research confirmed high precision in Ivory Coast and Ghana.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The FBL integrates open-source and proprietary datasets to enhance deforestation detection and remove false positives.  Future updates will improve accuracy. The integration of real-time deforestation and degradation events allows for rapid assessment of deforestation drivers. An inverse deforestation product will improve accuracy in cases of long intervals between crop occurrence and deforestation events.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>EnPT - An open-source tool for custom processing of EnMAP hyperspectral data</h2>
+        <div class="authors">Daniel Scheffler¹, Maximilian Brell², Niklas Bohn³, Alexander Kokhanovsky⁴, Mariana A. Soppa⁵, Astrid Bracher⁵,⁶, Karl Segl¹, Sabine Chabrillat¹,⁷</div>
+        <a href="image/PXL_20250625_140412547.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250625_140412547.MP~2.jpg" alt="Poster image: EnPT - An open-source tool for custom processing of EnMAP hyperspectral data">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To provide a highly customizable, free and open-source pre-processing chain for EnMAP data, enabling additional functionalities and fulfilling individual user requirements.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Developed a pre-processing chain (EnPT) with modular design, including functionalities like atmospheric correction (SICOR, ISOFIT, ACwater/POLYMER, EnFROSP), co-registration (AROSICS), and parameter retrieval.  Implemented as a standalone Python package or EnMAP-Box plugin.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>EnPT provides highly accurate and customizable hyperspectral EnMAP Level-2A data, including additional parameter retrieval maps not available in official products.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>EnPT offers a flexible and improved pre-processing workflow for EnMAP data. Future plans include continuous development, ISOFIT implementation improvements, and additional by-products.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Which Vegetation Index and Threshold Should Be Used? A Novel Optimization Framework for Accurate Detection of Key Crop Phenological Phases in Germany</h2>
+        <div class="authors">Abdelaziz Htitiou¹, Markus Möller², Tanja Riedel¹, Heike Gerighausen¹</div>
+        <a href="image/PXL_20250625_140547237~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250625_140547237~2.jpg" alt="Poster image: Which Vegetation Index and Threshold Should Be Used? A Novel Optimization Framework for Accurate Detection of Key Crop Phenological Phases in Germany">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To develop an optimization framework to determine the most suitable VI and optimal thresholds for accurately detecting key phenological phases of corn, winter wheat, and sugar beet in north-central Germany.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>De-noising VI time series using UE-WS filter; proposing a new phenocycle delineation method; deriving SOS and EOS using a dynamic threshold approach; optimizing SOS/EOS threshold using OPTUNA and DWD data from 2019-2020; validating findings against 2021 DWD and BBCH field observations.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The tailored optimization framework outperforms generic, non-optimized VIs and thresholds.  While certain VIs with optimal thresholds performed well for specific crop-phenophases (within ±10 days error), no single VI achieved consistent accuracy across all crops and growth phases.  For individual crop types and phenological phases, carefully selecting a VI and its optimal threshold significantly reduced the gap between satellite estimates and BBCH field measurements (R² &gt; 0.95 and RMSE &lt; 1.1 week).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The proposed framework outperforms the use of generic, non-optimized VIs and thresholds, offering a robust means for adapting remote sensing tools to specific crop and growth stages. It enables more precise, data-driven agricultural decision-making.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Sentinel-2 based Land Surface Phenology in complex Southern African Landscapes</h2>
+        <div class="authors">Jari Mahler¹, Achim Röder¹, David Frantz²
+¹ Environmental Remote Sensing and Geoinformatics, Trier University, Germany
+² Geoinformatics – Spatial Data Science, Trier University, Germany</div>
+        <a href="image/PXL_20250625_140743784.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250625_140743784.MP~2.jpg" alt="Poster image: Sentinel-2 based Land Surface Phenology in complex Southern African Landscapes">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To understand and map land surface phenology (LSP) in the Kavango-Zambezi Transfrontier Conservation Area (KAZA) using Sentinel-2 data, accounting for heterogeneous ecosystems and varying phenological timings.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Sentinel-2 time series data were processed using the following steps: radiometric correction (FORCE), outlier removal and interpolation, unsupervised hierarchical clustering (Ward linkage), dimensionality reduction (PCA), polar-based transformation of Day-of-Year (DOY) to a circular variable, and LSP parameter calculation.  Expert-based labeling and merging of unsupervised clusters were performed.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The study generated 39 yearly and multi-year LSP parameters (including inter-annual variability and long-term averages) to characterize vegetation dynamics.  These parameters enabled the identification of a small set of suitable LSP metrics to derive land cover classes and generate a map.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Land surface phenology offers a simple and interpretable approach for exploring spatial patterns of vegetation dynamics. The simplicity of the methodology enables a high degree of interpretability, making it suitable for area-wide analysis where reference data may be limited. For prediction purposes, more complex models and data would be beneficial.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Integrating land cover and human mobility data to understand global human-nature interactions</h2>
+        <div class="authors">Anne Cathrine Linder, Laura Alessandretti, and David Lusseau
+National Institute of Aquatic Resources, Technical University of Denmark</div>
+        <a href="image/PXL_20250625_141042310.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250625_141042310.MP~2.jpg" alt="Poster image: Integrating land cover and human mobility data to understand global human-nature interactions">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Do we have global nature use patterns?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Integrated Global Human Settlement Layer, smartphone mobility data (2015-2018, 7.7 million users, 25 billion location observations), and ESA WorldCover Map v2021.  Used a Habitat Selection Index (HSI) model with covariates of sex, age, home urbanization, and home country.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Nature use mobility patterns are global and dependent on sex, age, and home urbanization level.  The model predicted habitat selection index based on sex, age, and home urbanization; and probability of zero selectivity based on sex.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Future applications include assessing the impact of nature use on human well-being and developing spatio-temporal CES exploitation decision models to identify habitats and their socio-ecological contexts most likely to yield well-being benefits without endangering biodiversity.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Decision-making tool for Nighttime Light policies with SDGSAT-1 and Biodiversity Data in Haute-Savoie, France</h2>
+        <div class="authors">Aurélien Mure¹, Emma Bousquet¹, Sébastien Castets¹, Jean-François Bretaud², Solène Nitsche², Samuel Busson³, Florian Greffier, Julie Chaurands, Tom Brunelles, Camille Lhenrys, Vincent Delbars, Sarah Potins, Bastien Nguyen Duy - Bardakjis, Anne Gizard, Fannie Veuillot, Marie-Odile Marché, and Arnaud Ceyte¹.  (1) Cerema, Earth Observation team, Toulouse, France. (2) Cerema, Urban and Biodiversity team, Nantes, France. (3) Cerema, Light and Biodiversity team, Aix-en-Provence, France. (4) Cerema, Lighting research group, Angers, France. (5) LaTeleScop, Montpellier, France. (6) Syane, Annecy, France. (7) CNES, Toulouse, France.</div>
+        <a href="image/PXL_20250625_141447819~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250625_141447819~2.jpg" alt="Poster image: Decision-making tool for Nighttime Light policies with SDGSAT-1 and Biodiversity Data in Haute-Savoie, France">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Which areas are favorable to biodiversity and yet affected by high levels of nighttime lighting, potentially harmful for wildlife?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>The research used data from the SDGSAT-1 satellite.  Methods included geometrical correction using NightOSMRegistration CNES tool and AROSICS method; radiometric corrections for snow, denoising, calibration and pansharpening; and discretization into 5 classes based on quantiles. Ecological data included land cover (CLC+Backbone, CosIA, local land cover), regulatory zonings (Natura 2000, etc.), inventories, species databases and ecological networks.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The first results highlight areas favorable to biodiversity in Haute-Savoie with high levels of ALAN (both public and private) based on SDGSAT-1 observations.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Findings need further refinement and comparison with other biodiversity data.  The ORENOS project aims to develop indicators of lighting quality to produce a decision-making tool for nighttime lighting policies, replicable in other regions.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Integrating Multi-Scale Earth Observation for Monitoring of Mining Waste: Insights from the MOSMIN Project</h2>
+        <div class="authors">Moritz Kirsch¹, Sandra Lorenz¹, René Booysen¹, Cornelius Quigley¹, Verónica Rodríguez Tribaldos², Christopher Wollin², Christian Haberland², Oriol Monserrat³, Calin Baciu⁴, Farid Djeddaou⁵, Diana Comte⁶, Aaron Moya⁷, Richard Gloaguen¹
+¹Helmholtz-Zentrum Dresden-Rossendorf, Freiberg, Germany; ²GFZ Helmholtz Centre for Geosciences, Potsdam, Germany; ³Centre Tecnològic de Telecomunicacions de Catalunya (CTTC), Castelldefels, Spain; ⁴Babeş-Bolyai University, Cluj-Napoca, Romania; ⁵Ziane Achour University, Djelfa, Algeria; ⁶Advanced Mining Technology Center (AMTC), Universidad de Chile, Santiago, Chile</div>
+        <a href="image/PXL_20250625_141525469.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250625_141525469.MP~2.jpg" alt="Poster image: Integrating Multi-Scale Earth Observation for Monitoring of Mining Waste: Insights from the MOSMIN Project">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To develop integrated Earth Observation (EO)-based services that combine satellite, UAV, and in-situ data for enhanced environmental and geotechnical monitoring, and valorization, aligning with environmental, social, and governance (ESG) goals in the raw materials industry.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Combined satellite, uncrewed aerial vehicle (UAV), and in-situ data; spectral mapping; UAV-based topography models; AMWI indices; vegetation anomaly maps; InSAR with corner reflectors; Distributed Acoustic Sensing (DAS).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Process-integrated AMD monitoring workflow demonstrated at Rosia Poieni (Romania) and Trident (Zambia).  Identified AMD-prone source zones, tracked active processes, revealed downstream impact, detected surface movement and subsurface dynamics. Satellite imagery showed localised ground motion at a tailings storage facility.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>MOSMIN&#x27;s capability to deliver actionable insights across key mining challenges highlighted.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Can a Constellation of CubeSats using a Miniaturized Optical Ranging Instrument help reduce Temporal Aliasing in Gravity Field Recovery?</h2>
+        <div class="authors">Matthew Darrow¹, Thomas Gruber¹, Roland Pail¹, Elisabeth Paul¹,², and Bastian Eder²
+¹Technical University of Munich, Institute of Astronomical and Physical Geodesy
+²MUnique Technology GmbH, Munich, Germany</div>
+        <a href="image/PXL_20250625_141721069~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250625_141721069~2.jpg" alt="Poster image: Can a Constellation of CubeSats using a Miniaturized Optical Ranging Instrument help reduce Temporal Aliasing in Gravity Field Recovery?">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Can a constellation of CubeSats using a miniaturized optical ranging instrument help reduce temporal aliasing in gravity field recovery?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Used GROOPS open-source simulation software. Simulated constellations with varying numbers of satellite pairs (1-13), orbits (13 total with varying inclinations), recovery time periods (daily, 3-day, weekly, monthly), and noise levels (based on GRACE-FO&#x27;s LRI). Analyzed the residual global RMS in terms of Equivalent Water Height (EWH).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Diminishing returns were observed when adding pairs to a constellation, especially for optimized constellations. Optimal constellations showed significantly better results than non-optimal ones.  For higher spatial resolution, short-period solutions benefited most from more satellite pairs.  For optimized scenarios, solutions did not benefit significantly from more than 4 pairs.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>A CubeSat or microsatellite constellation of up to 4 pairs appears promising for short-term gravity field estimation.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Quantifying Livestock Diet Composition Using Earth Observation Data for Improved Estimation of Enteric Methane Emissions in Kenya</h2>
+        <div class="authors">John Mutua (School of Geosciences &amp; International Livestock Research Institute, University of Edinburgh), Alan Duncan (Division of Global Agriculture and Food Systems, University of Edinburgh), Gary Watmough (School of Geosciences, University of Edinburgh)</div>
+        <a href="image/PXL_20250626_144134543~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_144134543~2.jpg" alt="Poster image: Quantifying Livestock Diet Composition Using Earth Observation Data for Improved Estimation of Enteric Methane Emissions in Kenya">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Can Earth observation (EO) data improve the accuracy of estimates of livestock diet composition and quality, leading to better assessments of enteric methane emissions?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Feed availability was estimated using EO data on land use, dry matter productivity, crop distribution, and phenology. Diet composition was based on locally available feed, assuming livestock consume feed produced in the same location. The study focused on an adult female cow and evaluated diets across different seasons and production systems.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Livestock diet composition and quality vary spatially and temporally. Diet composition and quality can be estimated using freely available EO data.  Using EO data to quantify diet composition and quality improves estimates of GHG emissions.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Governments should implement policies leveraging EO data for monitoring livestock systems. Research should focus on developing advanced methods for using EO data for monitoring livestock systems.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Mapping Large Driftwood Deposits on North American Coastlines</h2>
+        <div class="authors">Carl Stadie, Martin Brandt, Ingmar Nitze, Xiaoye Tong, Siyu Liu, Ankit Kariryaa, Sizhuo Li, Florian Reiner, Tabea Rettelbach, Guido Grosse</div>
+        <a href="image/PXL_20250626_144700907.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_144700907.MP~2.jpg" alt="Poster image: Mapping Large Driftwood Deposits on North American Coastlines">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>How can large-scale driftwood deposits on Arctic coastlines be accurately mapped to improve climate and storm surge modelling?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>A UNet deep learning model was trained on 3,200 manually labelled PlanetScope2 satellite images (3m resolution).  31,814 3m PlanetScope2 scenes (2TB) from 2019, 2021, and 2023 were used to map driftwood across the North American Arctic.  Results were validated against driftwood cover estimates derived from 700km² of 10cm aerial imagery.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>19,717 driftwood deposits covering 22.9 million m² were mapped across 603,437 km². Individual deposits reached sizes up to 150,000 m² and clustered near large river deltas. Driftwood abundance declines after 200 km from the nearest river mouth.  82% of driftwood is found within 200km of its source. Driftwood abundance is positively correlated with catchment size and forest cover.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>High-resolution satellite imagery can accurately map large driftwood deposits at a large scale. The findings challenge the narrative of widespread driftwood distribution. The estimation is highly accurate with a bias of -23% overall and -4.28% for large deposits compared to aerial imagery estimates.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>ACOLITE/RAdCor: A Generic Adjacency Correction Algorithm For Inland And Coastal Water Applications</h2>
+        <div class="authors">Quinten Vanhellemont &amp; Alexandre Castagna</div>
+        <a href="image/PXL_20250626_145340901.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_145340901.MP~2.jpg" alt="Poster image: ACOLITE/RAdCor: A Generic Adjacency Correction Algorithm For Inland And Coastal Water Applications">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To present an atmospheric correction (AC) method that explicitly accounts for the Adjacency Effect (AE) using realistic atmospheric point spread functions (APSF) and fast processing.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>The aerosol type and concentration are determined from the satellite image using the AE-aware TOA-Surface Dark Spectrum Fitting (TSDSF) algorithm; optimized to in situ measurements or other reference data; or supplied by the user.  APSFs are simulated and stored in a LUT and reconstructed per band at runtime. Convolutions are performed in the frequency domain.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>RAdCor shows improvements compared to typical AC methods, especially in turbid atmospheres over contrasting surfaces. Validation is shown in figures comparing RAdCor retrievals over Belgian inland waters to in situ data.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>RAdCor is freely available in ACOLITE for processing near-nadir viewing imagery from several multispectral satellite sensors.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>The Nexus of Groundwater-fed Irrigation, Aquifer Depletion, Land Subsidence and Desertification Insights from a Multi-Decadal Satellite Survey in Iran</h2>
+        <div class="authors">Mahmud Haghighi, Institute of Photogrammetry and Geoinformation, Leibniz University Hannover; Mahdi Motagh, Section of Remote Sensing and Geoinformatics, GFZ Helmholtz Centre for Geosciences</div>
+        <a href="image/PXL_20250626_145552359~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_145552359~2.jpg" alt="Poster image: The Nexus of Groundwater-fed Irrigation, Aquifer Depletion, Land Subsidence and Desertification Insights from a Multi-Decadal Satellite Survey in Iran">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To provide the first unified, high-resolution subsidence map for Iran and analyze the impacts of depleting aquifers.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Interferometric Synthetic Aperture Radar (InSAR) observations from a multi-decadal satellite survey (Sentinel-1).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Approximately 3.5% of Iran&#x27;s land is facing significant land subsidence hazards;  Kerman province experiences the highest subsidence rates; land subsidence significantly correlates with groundwater extraction for agricultural irrigation; over two-thirds of subsiding lands are classified as agricultural areas; ~1.8 MCM/yr groundwater loss; the Central Plateau basin contributes to 70% of total loss; ~40% of land subsidence occurs in irrigated lands; approximately 14 million people live in areas affected by land subsidence hazard.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Can we explain GRACE/FO derived total water storage (TWS) variability, deficits/droughts and trends over Europe?</h2>
+        <div class="authors">Charlotte Hacker¹, Johannes Leonhardt¹, Ribana Roscher¹,³ Wanxue Zhu², Stefan Siebert², Thomas Heckerlei¹, Julian Giles¹, Silke Trömel¹, Jürgen Kusche¹
+[1] University of Bonn, Germany [2] University of Göttingen, Germany [3] Research Center Jülich, Germany</div>
+        <a href="image/PXL_20250626_145811019~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_145811019~2.jpg" alt="Poster image: Can we explain GRACE/FO derived total water storage (TWS) variability, deficits/droughts and trends over Europe?">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>What variables cause changes in TWS? How to quantify the impact of a natural/anthropogenic process on TWSA?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Causality, Granger causality, and Principal Component Analysis (PCA).  Detrended and deseasonalized datasets used.  Akaike criteria used for Granger Causality.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>First mode of GRACE reflects flood and drought events.  Using correlation, all soil moisture modes are identified as reflecting TWS variability. Precipitation is not identified as impacting TWS.  For Loire and Vistula basins, LAI is selected, reflecting agricultural activities and viticulture.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Correlation is a measure of similarity, overlooking important relations. Causal discovery algorithms allow for disentangling influences and relationships between variables. Further research needed on GC results concerning variable changes and impact on TWS, incorporating anthropogenic activities like irrigation, and analyzing variable dependencies.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Global Trends of Vegetation Leaf Moisture Content Since the 1980s</h2>
+        <div class="authors">Luisa Schmidt¹, Johanna Kranz¹, Daniel Kinalczyk¹, Marta Yebra²,³, Li Zhao³, Ruxandra-Maria Zotta⁴, Matthias Forkel¹</div>
+        <a href="image/PXL_20250626_150423997~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_150423997~2.jpg" alt="Poster image: Global Trends of Vegetation Leaf Moisture Content Since the 1980s">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To create a global satellite-based LFMC dataset since the 1980s to assess environmental impacts on vegetation, water, and carbon cycles.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>The study builds upon the VOD2LFMC approach to estimate LFMC using satellite data (VOD from passive microwave sensors and LAI).  The approach is extended with the VODCA v1 VOD dataset and GLOBMAP LAI data. LFMC trends are computed using linear regression for different seasons (fire season: May-October; off-season: November-April). VOD2LFMC estimations are compared with trends from long-term field sites of the Globe-LFMC v2.0 database.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Globally, increasing/decreasing trends in VOD2LFMC commonly differ by season. Fire season, in situ and derived trends often contradict each other. Off-season, in situ and derived trends show more often similar slopes and p-values. There is no clear positive or negative overall trend in the in situ/derived LFMC comparison.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Remotely derived LFMC has the potential to contribute to a more comprehensive assessment of vegetation water storage in a changing climate system.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Assessment of Biases in Crop Detection in Large-Scale EO Landcover Products in Tanzania</h2>
+        <div class="authors">Sophia Klaußner*, Stefan Lang*  *Z_GIS, Department of Geoinformatics, University of Salzburg</div>
+        <a href="image/PXL_20250626_152121519~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_152121519~2.jpg" alt="Poster image: Assessment of Biases in Crop Detection in Large-Scale EO Landcover Products in Tanzania">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Identify confounding factors of crop detection in the consensus of 11 commonly used LULC and crop cover maps.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Homogenisation of 11 landcover maps; Creation of consensus map; Collection of covariates; Homogenisation of covariates; Extract values at ground truth points; Regression Analysis to identify factors with an effect on the landcover models</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The consensus of the products is reliable at identifying non-crop pixels, but products are not in agreement on where the crop is. Geophysical factors are better suited in predicting the consensus agreement than the presence of humans. Linear Regression results: R² = 0.66, p &lt; .001. Significant factors: Elevation (+), Slope (-), Distance to Protected Nature Areas (+), Distance to Waterbodies (-). Insignificant factors: Average precipitation, Distance to highways, Temperature average, Distance to built-up pixels, Population density.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation</h2>
+        <div class="authors">Burak Ekim, Girmaw Abebe Tadesse, Caleb Robinson, Gilles Hacheme, Michael Schmitt, Rahul Dodhia, Juan M. Lavista Ferres
+University of the Bundeswehr Munich, Microsoft AI for Good Research Lab</div>
+        <a href="image/PXL_20250626_152902427.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_152902427.MP~2.jpg" alt="Poster image: Distribution Shifts at Scale: Out-of-distribution Detection in Earth Observation">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Tackle real-world cases with unknown test-time shifts and large spatial coverage in out-of-distribution (OOD) detection.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>The proposed method, TARDIS, uses a four-step process: 1) Pass ID and WILD samples through the model to collect activations; 2) Cluster the combined activations and assign surrogate distribution labels; 3) Train a classifier to separate surrogate-ID from surrogate-OOD samples; 4) At deployment, pass activations to the binary classifier to obtain a distribution score.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>TARDIS processes the entire continent of Africa in just 4 hours while preserving core-task accuracy.  The method&#x27;s performance closely matches or trails top post-hoc OOD detectors and produces clear maps of likely failure zones.  Experiments on 17 real-world distribution shifts showed high AUROC and low FPR95.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>TARDIS is a lightweight and scalable method for OOD detection that handles near-distribution shifts and operates under both covariate and semantic shifts. It&#x27;s suitable for safety-critical, time-sensitive, or low-data deployments.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Assessing the potential of social media data to support remote sensing data in migration analysis – An explorative approach for Ghana</h2>
+        <div class="authors">Johannes Mast¹, Marta Sapena¹,², Christian Geiß¹,³, Hannes Taubenböck¹,⁴</div>
+        <a href="image/PXL_20250626_153538409~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_153538409~2.jpg" alt="Poster image: Assessing the potential of social media data to support remote sensing data in migration analysis – An explorative approach for Ghana">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Can Twitter data be used as a substitute for census data in modeling internal migration in Ghana?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Correlation analysis between Twitter metrics and census variables; Multiple linear regression models with stepwise variable selection to assess the predictive power of Twitter metrics compared to census variables.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Twitter metrics correlated with many census variables.  Strong correlations were found between post/author counts, language diversity and the proportion of the economically active population; inverse correlations were found between post/author counts and the proportion of the population employed in agriculture. Adding Twitter data to the model marginally improved the R² (up to 0.5%).  Improvement was more substantial (4.4%) when focusing on districts with high numbers of posts.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Social media data are plausibly related to socioeconomic statistics, but substituting census data with social media is not straightforward and works better in urban areas. Future research should address the limitations of social media data and develop targeted statistics to fill knowledge gaps in migration research.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Assessing the potential of social media data to support remote sensing data in migration analysis - An explorative approach for Ghana</h2>
+        <div class="authors">Johannes Mast¹, Marta Sapena¹,², Christian Geiß¹,³, Hannes Taubenböck¹,⁴
+¹ German Aerospace Center, German Remote Sensing Data Center, Weßling, Germany; ² Image Processing Laboratory, Universitat de València, Valencia, Spain; ³Department of Geography, University of Bonn, Bonn, Germany; ⁴Julius-Maximilians-Universität Würzburg, Institute of Geography and Geology, Germany</div>
+        <a href="image/PXL_20250626_153538409~3.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_153538409~3.jpg" alt="Poster image: Assessing the potential of social media data to support remote sensing data in migration analysis - An explorative approach for Ghana">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To test the suitability of Twitter metrics as a substitute for census data in modeling internal migration in Ghana, especially given the infrequent availability and high cost of census data.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Correlation analysis between Twitter metrics and census variables; Multiple linear regression models with stepwise variable selection to compare the predictive power of Twitter metrics and census variables in predicting the Migration Effectiveness Index (MEI).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Twitter metrics correlated with many census variables.  Strong correlations were found between post and author counts, language diversity, and the proportion of the economically active population; inverse correlations were found between post and author counts and the proportion of the population employed in agriculture.  Adding Twitter statistics improved the linear model marginally (up to 0.5% adjusted R²), while census variables yielded an 8.6% improvement.  Focusing on districts with high social media use improved the model by 4.4%.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Social media statistics plausibly relate to socioeconomic statistics but substituting them for census data is not straightforward, working well only in urban areas with high social media use. Future research should address limitations of social media data and develop targeted statistics to address knowledge gaps.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Contrasted Cross-border Agricultural Patterns and Trends in the Irrigated Senegal River Valley since 2016</h2>
+        <div class="authors">Jonas Meier¹, Frank Thonfeld¹, Niklas Heiss¹, Verena Huber García¹, Pierre C. Sibiry Traore²,³, Celeste Tchapmi Nono Nghotchouang³, Janet Mumo Mutuju²,³, Khadidiatou Faye², Sidy Tounkara⁴, Laure Tall⁴, Stefanie Steinbach⁵, Valerie Graw⁵, Ursula Gessner¹</div>
+        <a href="image/PXL_20250626_154354166~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_154354166~2.jpg" alt="Poster image: Contrasted Cross-border Agricultural Patterns and Trends in the Irrigated Senegal River Valley since 2016">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To analyze contrasted cross-border agricultural patterns and trends in the irrigated Senegal River Valley since 2016.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Land use classification using Sentinel-1 and Sentinel-2 data.  Methods included pre-processing (speckle filtering, radiometric terrain normalization, cloud masking), temporal-spectral metrics (percentiles of VV &amp; VH polarization, vegetation indices), random forest classification, and post-processing (masking urban areas using World Settlement Footprint).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>High dynamic agriculture system due to irrigation;  large scale commercial farms developed in Senegal; strong gradient of fallow fields from East to West;  strong increase of agriculture area in Mauritania; constant development in Senegal but lower increase during COVID-19; no labor migration from Mali.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>EcoWikiRS: Learning Ecological Representation of Satellite Images from Weak Supervision with Species Observations and Wikipedia</h2>
+        <div class="authors">Valérie Zermatten¹, Javiera Castillo-Navarro², Pallavi Jain ³,⁴,⁵, Devis Tuia¹, Diego Marcos³,⁵; ¹EPFL, Sion, Switzerland, ²CNAM, Paris, France, ³INRIA, Montpellier, France, ⁴CIHEAM-IAMM, Montpellier, France, ⁵Univ. of Montpellier, France</div>
+        <a href="image/PXL_20250626_154620012.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250626_154620012.MP~2.jpg" alt="Poster image: EcoWikiRS: Learning Ecological Representation of Satellite Images from Weak Supervision with Species Observations and Wikipedia">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Can we teach some ecology to RS-VLMs using Wikipedia?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>A pre-trained VLM composed of a text encoder (TE) and visual encoder (VE) is fine-tuned with the WINCEL loss on the EcoWikiRS dataset.  The EcoWikiRS dataset is a large text-image dataset of 91,801 aerial images paired with 103,000+ unique sentences from 2,745 different species.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Fine-tuning on the EcoWikiRS dataset outperforms pretrained models. WINCEL beats standard InfoNCE for three VLMs. Sentences extracted from the habitat section of Wikipedia articles lead to better results than extracting sentences based on keywords, random sentences, or species names.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Understanding central European forest practitioners&#x27; requirements for remote sensing-based information products: A questionnaire survey</h2>
+        <div class="authors">Fabian Fassnacht, Christoph Mager, Lars T. Waser, Ursa Kanjir, Jannika Schäfer, Ana Potocnik Buhvald, Elham Shafeian, Felix Schiefer, Lisa Stancic, Markus Immitzer, Michele Dalponte, Krzysztof Sterenczak, Mitja Skudnik</div>
+        <a href="image/PXL_20250627_082340455~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_082340455~2.jpg" alt="Poster image: Understanding central European forest practitioners&#x27; requirements for remote sensing-based information products: A questionnaire survey">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Understanding central European forest practitioners&#x27; requirements for remote sensing-based information products</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Questionnaire survey</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Findings related to the importance of tree species detail, canopy height model accuracy, and biomass/wood volume data, with insights into user preferences for data presentation and format.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>GEDI Detects Decline in Overstorey and Increase in Understorey Canopy Cover of Protected Forests in Central Europe Since 2019</h2>
+        <div class="authors">Xiao Liu¹, Vítězslav Moudrý², Bernhard Schuldt³, Matthias Forkel¹
+1 TUD Dresden University of Technology, Junior Professorship in Environmental Remote Sensing, Dresden, Germany
+2 Czech University of Life Sciences Prague, Faculty of Environmental Sciences, Department of Spatial Sciences, Prague, Czechia
+3 TUD Dresden University of Technology, Institute of Forest Botany and Forest Zoology, Dresden, Germany</div>
+        <a href="image/PXL_20250627_082703953.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_082703953.MP~2.jpg" alt="Poster image: GEDI Detects Decline in Overstorey and Increase in Understorey Canopy Cover of Protected Forests in Central Europe Since 2019">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To investigate the change in the vertical structure of forests during disturbances in Central Europe since 2018, using GEDI to measure canopy cover in overstorey and understorey.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Spatial-temporal aggregation of GEDI footprints; 10-meter boundary between understorey and overstorey; decomposition of GEDI canopy cover time series using Seasonal-Trend decomposition using Loess; Theil-Sen slope estimation from deseasonalized time series.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Decrease in overstorey and increase in understorey canopy cover in Central European forests; Understorey growth rises as overstorey canopy cover declines in coniferous forests.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Updates on the nrt Python Package Enhancing Near Real-Time Forest Disturbance Monitoring</h2>
+        <div class="authors">Loïc Dutrieux¹, Jonas Viehweger²,³, Kenji Ose¹, Pieter S.A. Beck¹
+1-European Commission (EC), Joint Research Centre (JRC), Ispra, Italy
+2-Sinergise Solutions GmbH, Graz, Austria
+3-Joanneum Research, Graz, Austria</div>
+        <a href="image/PXL_20250627_082928685~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_082928685~2.jpg" alt="Poster image: Updates on the nrt Python Package Enhancing Near Real-Time Forest Disturbance Monitoring">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Enhancing near real-time forest disturbance monitoring</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Prototyping and testing; Data simulation utilities; Demonstration datasets; Tuning and validation; Reference data collection; Sampling; Parameters optimization; Temporal validation; Monitoring engines (nrt core, nrt multivar*, nrt ensemble*); Satellite data archive + STAC catalogue; Supervised monitoring with trained ensembles; Multivariate monitoring</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Development of the nrt Python package, enabling efficient computation across large geographical areas; improved temporal validation results (shown in a graph)</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Extending canopy structure measurements from GEDI and ICESat-2 to savannas</h2>
+        <div class="authors">Mikhail Urbazaev¹², John Armston², Steven Hancock³, Konrad Wessels⁴
+¹GFZ Helmholtz Center for Geosciences, ²University of Maryland, ³University of Edinburgh, ⁴George Mason University</div>
+        <a href="image/PXL_20250627_083752159.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_083752159.MP~2.jpg" alt="Poster image: Extending canopy structure measurements from GEDI and ICESat-2 to savannas">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Evaluate the efficacy of GEDI and ICESat-2 for the estimation of vegetation height across contrasting savanna ecosystems. Examine measurement error in GEDI L2A and ICESat-2 ATL08 data.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Colocation and comparison of GEDI and ICESat-2 data with Airborne Laser Scanning (ALS) data.  Waveform processing, deconvolution, and locally calculated p&lt;sub&gt;v&lt;/sub&gt;/p&lt;sub&gt;g&lt;/sub&gt;. Simulated GEDI waveforms from ALS data at multiple spatial scales.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Lowered GEDI&#x27;s minimum detectable canopy height via waveform deconvolution. Reduced bias in GEDI canopy cover by applying locally calculated p&lt;sub&gt;v&lt;/sub&gt;/p&lt;sub&gt;g&lt;/sub&gt;. Improved vertical resolution of GEDI profile metrics through waveform deconvolution. Determined an optimal spatial scale for canopy height estimates.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>On-orbit GEDI and ICESat-2 canopy structure measurements in savannas can be improved by applying waveform deconvolution and locally calculated p&lt;sub&gt;v&lt;/sub&gt;/p&lt;sub&gt;g&lt;/sub&gt;. An optimal spatial scale for canopy height estimates balances RMSE, sample size, and footprint colocation.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Multi-Annual Forest Structure Characterization in Germany – Novel Products and Analysis Based on GEDI, Sentinel-1 Sentinel-2 Data</h2>
+        <div class="authors">Patrick Kacic¹, Frank Tonfeld², Ursula Gessner², Claudia</div>
+        <a href="image/PXL_20250627_083945539.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_083945539.MP~2.jpg" alt="Poster image: Multi-Annual Forest Structure Characterization in Germany – Novel Products and Analysis Based on GEDI, Sentinel-1 Sentinel-2 Data">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Assess multi-annual forest structure dynamics in the context of increasing disturbances in Germany based on GEDI, Sentinel-1 and Sentinel-2 data.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Machine learning regression modeling of GEDI samples (footprint information on canopy height, total canopy cover, above-ground biomass density) based on Sentinel-1 and Sentinel-2 temporal-spectral metrics.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Small-scale changes before 2020 in the Harz. Landscape-scale disturbances since 2020 for previously high forests with dense canopy covers being rich in above-ground biomass density. Former spruce plantations (core area) are characterized by a reduction in canopy height, total canopy cover, and above-ground biomass density.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Based on the novel forest structure products for Germany, previously mapped areas of canopy cover loss as response to repeated drought years can be quantitatively characterized by canopy height, total canopy cover, as well as above-ground biomass density. Improved understanding of post-disturbance structures, e.g. to delineate stand-replacing and non-stand-replacing disturbances. The characterization of disturbance structures and undisturbed areas enables the assessment of potential future forest resilience to inform forest management.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Global grassland and livestock data for conversion monitoring</h2>
+        <div class="authors">Lindsey Sloat, Leandro L Parente, Vinícius Vieira Mesquita, Davide Consoli, Radost Stanimirova, Ana Rebeoredo Segovia, Carmello Bonannella, Nathália Teles, Maria O Hunter, Ana Paula Matos, Steffen Ehrmann, Ziga Malek, Ivelina Georgieva, Carsten Meyer, Icshani Wheeler, Fred Stolle, Tomislav Hengl, Steffen Fritz, and Laerte Guimaraes Ferreira</div>
+        <a href="image/PXL_20250627_084106693~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_084106693~2.jpg" alt="Poster image: Global grassland and livestock data for conversion monitoring">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Tracking conversion of natural lands to livestock pastures; informing sustainable land management and conservation decisions.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Satellite data, EO data fusion, ML models, iterative feedback.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Development of innovative global grassland and pasture mapping products; data available in STAC and GEE catalogs and through an API under a CC-BY data license.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Monitoring herbaceous biomass of semi-natural grasslands using machine learning on Sentinel-1 and Sentinel-2 imagery</h2>
+        <div class="authors">Iris Luik¹, Triin Reitalu², Elisabeth Prangel², Liis Kasari-Toussaint², Aveliina Helm², Evelyn Uuemaa¹
+¹ Landscape Geoinformatics Lab, Department of Geography, Institute of Ecology and Earth Sciences, University of Tartu
+² Landscape Biodiversity Group, Department of Botany, Institute of Ecology and Earth Sciences, University of Tartu</div>
+        <a href="image/PXL_20250627_084227631~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_084227631~2.jpg" alt="Poster image: Monitoring herbaceous biomass of semi-natural grasslands using machine learning on Sentinel-1 and Sentinel-2 imagery">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To develop a Random Forest model for estimating herbaceous biomass on semi-natural grasslands, supporting the evaluation of grassland restoration effects.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Collected 97 live plant biomass samples from alvar grasslands in Western Estonia. Used Sentinel-1 and Sentinel-2 imagery from summer 2019.  Processed data in Google Earth Engine. Calculated NDVI, BSI, and VH/VV ratio. Developed a Random Forest regression model in Python using Scikit-Learn.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The Random Forest model achieved R² of 0.70 for training data and 0.48 for testing data.  Most significant predictors were near-infrared band (B8), shortwave infrared band (B12), bare soil index (BSI), and Sentinel-1&#x27;s VV polarization.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Combining optical (Sentinel-2) and SAR (Sentinel-1) data offers a promising approach for monitoring herbaceous biomass in semi-natural grasslands. This integrated methodology provides a cost-effective tool for monitoring landscape-level conservation and restoration efforts.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Copernicus-Powered Monitoring of Natura 2000 Grasslands</h2>
+        <div class="authors">Jan Mišurec¹, Jiří Kadlec¹, Jiří Tomiček¹, Sivasankar Arul¹, Lucie Děkanová¹, Victor Verhaert², Mathilde DeVroey², Hans Vanrompay², Raquel Geijo Fernández³, Victor Miguélez Blanco³, Cristina Arbues Zueco³, Karl Ruf, Heinz Gallaun, Felix Bernsteiner, Geoff Smith, Evan Frank, Enora Caer, Luboš Halada, Per Törang and Stefan Kleeschulte
+1- Gisat (CZ), 2 - VITO (BE), 3- Bilbomatica (ES), 4 - Space4Environment (LU), 5- Joanneum Research (AT), 6-Specto Natura (UK), 7 - ALSO Space (BE), 8 - SAV (SK), 9 - SLU (SE)</div>
+        <a href="image/PXL_20250627_084321154~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_084321154~2.jpg" alt="Poster image: Copernicus-Powered Monitoring of Natura 2000 Grasslands">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To provide long-term, consistent, actionable insights related to the evolution over time of grassland distribution, condition, and management in Natura 2000 sites.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>The research uses satellite data (Landsat, Sentinel-1, Sentinel-2) combined with other datasets (HRLS, HR-VPP, CLC+ BB, COP30 DEM) and Random Forest algorithms to analyze land cover, grassland type, management intensity, and productivity.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The poster presents maps and data on land cover change, grassland type classification, management event detection, grassland persistence, bare soil anomalies, and short-term and long-term productivity trends.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Not specified in poster</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Towards a European Grassland Productivity Estimation System</h2>
+        <div class="authors">Mattia Rossi¹, Julien Morel¹, Davide Fumagalli¹, Martin Claverie¹
+¹European Commission - Joint Research Center (JRC), Ispra, Italy</div>
+        <a href="image/PXL_20250627_084353057~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_084353057~2.jpg" alt="Poster image: Towards a European Grassland Productivity Estimation System">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To monitor grassland systems in Europe and estimate grassland productivity.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Aggregated gridded weather data (10km spatial grid), HRL grassland mask, HRL mowing dates.  Used Lingra and Modvege models. Implemented in GraminR package and Ecrops Module. Validation against regional yield statistic data from different NUTS regions and national statistic collections.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Regional statistics are very heterogeneous.  The system works better in some countries than others. Accurate and reliable cut dates and locations are crucial. HRL stripes are very influential. Copernicus layers are limited for near real-time estimation.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Regional statistics show high heterogeneity. Accuracy varies across countries. Precise cut dates and locations are crucial for reliable results.  Copernicus data limitations hinder near real-time estimations.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Two Decades of Global Grassland Productivity: High-resolution GPP and NPP via Light Use Efficiency Model</h2>
+        <div class="authors">Mustafa Serkan Isik¹, Leandro Parente¹, Davide Consoli¹, Lindsey Sloat², Vinicius Mesquita³, Laerte Guimaraes Ferreira³, Radost Stanimirova², Nathália Teles³, Tomislav Hengl¹
+[1] OpenGeoHub Foundation, Doorwerth, The Netherlands [2] Land &amp; Carbon Lab, World Resources Institute, Washington DC, USA [3] Remote Sensing and GIS Laboratory (LAPIG/UFG), Goiania, Brazil</div>
+        <a href="image/PXL_20250627_084616112~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_084616112~2.jpg" alt="Poster image: Two Decades of Global Grassland Productivity: High-resolution GPP and NPP via Light Use Efficiency Model">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>Develop a framework for grassland GPP modeling using EO data; validate GPP estimates against flux tower observations; demonstrate the value of high-resolution GPP for long-term grassland monitoring.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Implemented a high-resolution, space-time modeling framework using the LUE model and bimonthly cloud-free and gap-free Landsat ARCO dataset, starting with a land cover-independent scheme, to generate globally consistent GPP estimates and calibrated outputs specifically for grasslands.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The data is well-suited for trend analysis to identify major GPP losses, potential indicators of land degradation, monitoring grasslands, crop yield mapping, and modeling GHG fluxes at finer spatial resolutions. Validation of GPP estimates using more than 500 eddy covariance flux towers showed an R² of 0.48-0.71 and RMSE &lt; ~2.3 gC/m²/day across all land cover classes. For grasslands, validation with 92 flux towers showed an R2 of 0.51-0.70 and RMSE &lt; ~2gC/m²/day. High correlation with in-situ data (r = 0.73-0.90) but some underestimation observed in certain regions.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The data is well-suited for trend analysis to identify major GPP losses, potential indicators of land degradation, monitoring grasslands, crop yield mapping, and modeling GHG fluxes at finer spatial resolutions.  Future work includes regional calibration, higher spatial and temporal resolution, and extension to Net Primary Productivity (NPP).</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Earth Observations for Grassland and Rangeland Managers: Current Utility and Co-Development of New Methods and Tools</h2>
+        <div class="authors">Anthony Vorster (anthony.vorster@colostate.edu), Nicholas Young, Daniel Cleveland, Natural Resource Ecology Laboratory, Colorado State University</div>
+        <a href="image/PXL_20250627_085421412~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_085421412~2.jpg" alt="Poster image: Earth Observations for Grassland and Rangeland Managers: Current Utility and Co-Development of New Methods and Tools">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>How can Earth Observation (EO) data be effectively integrated into grassland and rangeland management decisions to support climate action, biodiversity conservation, and sustainable management?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Outreach and engagement with ranchers; assessment of current EO product adoption levels; co-development of EO adoption use cases; replicated grazing experiment using virtual fencing and EO data; analysis of EO data (NPP products, time series) to quantify rangeland resilience and degradation.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>High potential for EO tools in rangeland management but low awareness among managers; adoption rates are low due to delayed release times, spatial and temporal mismatch between remotely sensed and manager-relevant metrics, and limited trust in EO accuracy.  Example use case demonstrates virtual fencing integration with EO data improving rangeland condition, livestock performance, and carrying capacity.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Close collaboration between land managers, scientists, and computer scientists is needed to develop valuable EO tools.  EO data complements on-the-ground experience; space agencies&#x27; focus on applied EO products is encouraging.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Monitoring herbaceous biomass of semi-natural grasslands using machine learning on Sentinel-1 and Sentinel-2 imagery</h2>
+        <div class="authors">Iris Luik¹, Triin Reitalu², Elisabeth Prangel², Liis Kasari-Toussaint², Aveliina Helm², Evelyn Uuemaa¹
+¹ Landscape Geoinformatics Lab, Department of Geography, Institute of Ecology and Earth Sciences, University of Tartu
+² Landscape Biodiversity Group, Department of Botany, Institute of Ecology and Earth Sciences, University of Tartu</div>
+        <a href="image/PXL_20250627_085428802.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_085428802.MP~2.jpg" alt="Poster image: Monitoring herbaceous biomass of semi-natural grasslands using machine learning on Sentinel-1 and Sentinel-2 imagery">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To develop a Random Forest model for estimating herbaceous biomass on semi-natural grasslands to support the evaluation of grassland restoration effects.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Live plant biomass samples were collected in summer 2019 from alvar grasslands in Western Estonia. Sentinel-1 and Sentinel-2 imagery from summer 2019 were used.  A Random Forest regression model was developed in Python using the Scikit-Learn package.  All Sentinel-1 and Sentinel-2 bands, along with NDVI, BSI, and VV/VH were used as predictors. A 70/30 split was used for training and testing sets. Model hyperparameters were tuned using Grid Search.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>The model achieved R² of 0.70 for the training data and 0.48 for the testing data.  SHAP analysis revealed that the most significant predictors were Near Infrared band (B8), Short Wave Infrared band (B12), Bare Soil Index (BSI), and Vertical-Vertical (VV) polarization (from Sentinel-1).</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Combining optical (Sentinel-2) and SAR (Sentinel-1) data offers a promising approach for monitoring herbaceous biomass in semi-natural grasslands. This integrated methodology provides a cost-effective tool for monitoring landscape-level conservation and restoration efforts.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Quantifying the Multi-dimensional Impact of Rangeland Restoration From Space</h2>
+        <div class="authors">Mendy van der Vliet (Wageningen University &amp; Research), Yoann Malbeteau (Planet Labs PBC), Darren Ghent (National Centre for Earth Observation, University of Leicester), Sander de Haas (Justdiggit), Karen L. Veal (National Centre for Earth Observation, University of Leicester), Thijs van der Zaan (Justdiggit), Rajiv Sinha (Indian Institute of Technology Kanpur), Rasmus Houborg (Planet Labs PBC), Saroj K. Dash (University of California, Davis), and Richard de Jeu (Transmissivity BV)</div>
+        <a href="image/PXL_20250627_085448139.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_085448139.MP~2.jpg" alt="Poster image: Quantifying the Multi-dimensional Impact of Rangeland Restoration From Space">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To evaluate the effectiveness of landscape restoration using a combination of long-term and high-resolution satellite data records.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Co-designed an approach using C3S Passive Soil Moisture, Planet Soil Water Content, ESA CCI MODIS Land Surface Temperature, ESA CCI Sentinel-3 LST, Planet SWC and LST, MODIS NDVI, Sentinel-2 NDVI, and Planet Fusion NDVI.  Normalised change in variables calculated. Mann Kendall trend test used.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Quantified a ~13% average increase in water retained in soil, a ~-0.5°C local soil cooling, and a ~50% average increase in vegetation greenness over 3.5 years.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>This approach demonstrates the environmental impact of restoration and forms the base for automatic reporting of comprehensive metrics.  Space agencies and commercial providers are achieving the accuracy, frequency, and resolution needed for effective assessment of restoration activities.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Near real-time anomaly detection in permanent grasslands using Sentinel-2: a tool for monitoring CAP compliance</h2>
+        <div class="authors">Eric Kosczor¹, Christine Wessollek¹, Daniel Kinalczyk¹, Pierre Karrasch², Nora Egli², Matthias Forkel¹</div>
+        <a href="image/PXL_20250627_085552598~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_085552598~2.jpg" alt="Poster image: Near real-time anomaly detection in permanent grasslands using Sentinel-2: a tool for monitoring CAP compliance">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To develop an anomaly detection approach for identifying irregularities on grassland parcels in Sentinel-2 imagery to monitor compliance with the EU Common Agriculture Policy&#x27;s Good Agricultural and Environmental Conditions (GAEC) rules, specifically the ban on converting permanent grasslands.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Used Sentinel-2 data, administrative data, and climate data.  Processed data included inward buffering of parcels, calculation of climate clusters (using DBSCAN), calculation of 4 vegetation indices, and grouped vegetation index statistics.  Employed a two-fold unsupervised anomaly detection approach using Isolation Forest with hyperparameter tuning and adaptive threshold for anomaly classification, followed by case differentiation to only retain anomalies corresponding to a decrease in greening.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Detected anomalies included bare soil, infrastructure, and other inconclusive cases. On-site validation confirmed some cases.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The developed approach shows feasibility for monitoring GAEC compliance using remote sensing data.  However, detecting an anomaly does not guarantee a GAEC 1 violation.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Assessing Vegetation Dynamics and Land Cover Changes in Agricultural Pasture Areas and Croplands of the Mantsopa Region, South Africa</h2>
+        <div class="authors">Heinz, L.¹, Kazenwadel, S.¹, Wolsza, M.¹, Baade, J.², de Jager, L.³, Morgenthal, T., Schmullius, C.¹
+¹Department for Earth Observation, Friedrich Schiller University Jena, 07737 Jena, Germany
+²Department of Geography, Friedrich Schiller University Jena, 07737 Jena, Germany
+³Fetterncairn Farm, Wepener, South Africa
+⁴Directorate: Land and Soil Management, Department of Agriculture, Pretoria, South Africa</div>
+        <a href="image/PXL_20250627_113848207.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_113848207.MP~2.jpg" alt="Poster image: Assessing Vegetation Dynamics and Land Cover Changes in Agricultural Pasture Areas and Croplands of the Mantsopa Region, South Africa">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>How well do satellite-based soil moisture indices correlate with in-situ measurements?
+What are the differences in vegetation dynamics between croplands and pastures?
+How effective is K-Means Clustering for land cover classification?</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Soil and Surface Moisture Product Comparison; Time Series Analysis using Sentinel-2 EVI, MSWEP, Sentinel-1 VV and VH backscatter, and VV-polarized coherence; Land Cover Classification using unsupervised K-Means Clustering based on Sentinel-1 VV and VH backscatter, RVI, and VV-polarized coherence.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Soil moisture products show good agreement with in-situ data for long-term trends. Vegetation dynamics reveal clear differences: pastures generally follow seasonal rainfall patterns, while croplands exhibit higher variability. Sentinel-1 coherence highlights more temporal stability in pastures. Unsupervised classification using PCA and K-means provided useful clustering, but the differentiation of pastures proved challenging.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Sentinel-1 and Sentinel-2 time series show potential for differentiating croplands and pastures in a semi-arid South African context. Future work could explore more advanced classification approaches to better capture the complexity of pasture landscapes.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Spatio-temporal monitoring of vegetation structure and surface moisture within South African National Parks from Sentinel-1 and -2 Time-Series</h2>
+        <div class="authors">Christiane Schmullius¹, Marco Wolsza¹, T. Strydom² and J. Baade¹
+¹ Department of Geography, Friedrich Schiller University Jena, FRG
+² Scientific Services, Savanna and Arid Regions, South African National Parks (SANPARKS), Skukuza, RSA</div>
+        <a href="image/PXL_20250627_113917054.MP~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_113917054.MP~2.jpg" alt="Poster image: Spatio-temporal monitoring of vegetation structure and surface moisture within South African National Parks from Sentinel-1 and -2 Time-Series">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To assess the extent of human-induced land degradation in South Africa compared to periodic climate-induced changes, focusing on vegetation structure and surface moisture.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>Developed an automated system for high temporal and spatial resolution change detection; adapted and applied a regional earth system model (WRF-Hydro); advanced current soil degradation process assessment tools; utilized Sentinel-1 and -2 time series, in-situ soil moisture measurements, and machine learning; created SALDI Data Cubes with Python scripts for vegetation indices, bare soil maps, vegetation height, woody cover, and surface moisture.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Developed an automated system for high temporal and spatial resolution change detection;  established data cubes and Jupyter Notebooks with various Python scripts for land degradation assessment; used in-situ data and feedback from local experts for model training and accuracy assessment; created a spatio-temporal EO monitoring strategy for land degradation detection in Southern Africa.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>The SALDI Data Cube will be exchanged with SANSA and the SASSCAL Open Access Data Center to improve land and soil degradation management.  The results will be freely available to stakeholders in Southern Africa for non-commercial use.</p>
+        </div>
+    </div>
+    <div class="poster-entry">
+        <h2>Spatio-temporal unmixing of the South African protected savanna ecosystems using a multi-data approach with spectral temporal metrics</h2>
+        <div class="authors">Hilma S. Nghiyalwa, Akpona Okujeni, Eliakim Hamunyela, Tshililo Ramaswiela, Jussi Baade, Patrick Hostert, and Christiane Schmullius</div>
+        <a href="image/PXL_20250627_114402117~2.jpg" target="_blank">
+            <img class="thumbnail" src="image/PXL_20250627_114402117~2.jpg" alt="Poster image: Spatio-temporal unmixing of the South African protected savanna ecosystems using a multi-data approach with spectral temporal metrics">
+        </a>
+        <div class="section">
+            <div class="section-title">Research Question / Objective</div>
+            <p>To create a cover fraction-based assessment of vegetation constituents in protected areas in the semi-arid savannas of Northern Cape Province of South Africa.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Methods</div>
+            <p>A neural network regression unmixing (NNR) was used with data from Sentinel-1, Sentinel-2, and a combination of both.  Data included annual spectral temporal metrics (STMs), Google Earth imagery, and aerial photographs.  Synthetic mixtures were used for training data.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Results</div>
+            <p>Combined Sentinel-1 and Sentinel-2 data showed improved accuracy compared to using either sensor alone, especially for woody and soil fractions. For herbaceous fractions, Sentinel-2 performed best.</p>
+        </div>
+        <div class="section">
+            <div class="section-title">Conclusions</div>
+            <p>Multi-sensor integration improves the accuracy of vegetation fraction mapping in semi-arid savannas, particularly for woody and soil fractions.</p>
+        </div>
+    </div>
+
+</body>
+</html>
